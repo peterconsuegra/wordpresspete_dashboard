@@ -14,6 +14,7 @@ use App\Models\PeteSync;
 
 Route::get('/', function (Request $request) {
     
+    /*
     $logged_in_as = PeteSync::checkTheTypeOfLoggedIn();
 
     if($logged_in_as === "loggedInAsAdmin"){
@@ -23,6 +24,8 @@ Route::get('/', function (Request $request) {
     }else{
          return redirect(env('WP_URL_LOGIN'));
     }
+    */
+    return view('welcome');
 
 });
 
